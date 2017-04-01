@@ -1,2 +1,10 @@
 @import 'mixins';
 @import 'variables';
+
+nav {
+    background-color: black;
+    position: fixed !important;
+    *{
+        color: white;
+    }
+}
