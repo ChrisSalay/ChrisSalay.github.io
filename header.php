@@ -17,19 +17,4 @@
         <script src="/js/riva.js"></script>
         <link rel="stylesheet" href="/style/style.css" type="text/css" />
     </head>
-<body>
-    <div class"container-fluid" id="fullpage">
-        <div class="section">
-            <h1>section 1</h1>
-        </div>
-        <div class="section">
-            <h1>section 2</h1>
-        </div>
-        <div class="section">
-            <h1>section 3</h1>
-        </div>
-    </div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
-</html>
+<?php require 'navigation.php' ?>
