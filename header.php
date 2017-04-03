@@ -13,7 +13,10 @@
         <!--fullpage.js -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" type="text/css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
-            
+         
+         <!--animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
         <script src="/js/riva.js"></script>
         <link rel="stylesheet" href="/style/style.css" type="text/css" />
     </head>

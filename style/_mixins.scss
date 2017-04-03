@@ -1,0 +1,17 @@
+@mixin strict_width($value){
+    max-width: $value;
+    min-width: $value;
+}
+
+@mixin strict_height($value){
+    min-height: $value;
+    max-height:$value;
+}
+
+@mixin add_image($img,$size: cover,$bg-attachment: fixed, $bg-repeat: no-repeat){
+    background-image: url(#{$img});
+    background-repeat: $bg-repeat;
+    background-size:$size;
+    background-attachment: $bg-attachment;
+    background-origin: content-box;
+}

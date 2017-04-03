@@ -2,9 +2,38 @@
 @import 'variables';
 
 nav {
-    background-color: black;
+    background-color: $trans_black;
     position: fixed !important;
     *{
         color: white;
     }
+}
+#riva {
+    @include add_image($riva1);
+    
+    *{
+        color: white;
+    }
+    
+    .row {
+        .title {
+            text-transform: uppercase;
+            font-family: $mrs-eaves;
+            font-size: 10em;
+        }
+    }
+    
+}
+#follow_riva {
+    @include add_image($riva2, contain,local,repeat-x);
+    
+    *{
+        color: white;
+    }
+}
+
+#hello {background-color: $light_silver;}
+#contact {
+    background-color: $gris;
+    color: white;
 }

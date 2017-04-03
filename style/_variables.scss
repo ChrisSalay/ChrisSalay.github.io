@@ -8,11 +8,21 @@ $riva4:'/img/riva4.jpg';
 $light_gray:#BFBABF;
 $gris:#7F7C7F;
 $dark_gray:#403E40;
-$blanc_fonce:#403E40;
+$light_silver:#E5E3E5;
 
 //TRANSPARENT COLORS:
 $trans_light_gray: rgba(191,186,191,0.7);
 $trans_gris: rgba(127,124,127,0.7);
 $trans_dark_gray: rgba(64,62,64,0.7);
 $trans_blanc_fonce: rgba(229,224,229, 0.7);
+$trans_black: rgba(0,0,0,0.7);
 
+//FONTS:
+$azote:"azote",serif;
+$essones_headline: "essonnes-headline",serif;
+$mrs-eaves: "mrs-eaves",serif;
+$heading1: "capitol",sans-serif;
+$text: "paralucent",sans-serif;
+$heading2: "balboa-plus-fill",sans-serif;
+$heading3: "balboa-plus-inline",sans-serif;
+$heading4: "balboa-plus-gradient",sans-serif;

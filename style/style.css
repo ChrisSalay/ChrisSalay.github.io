@@ -1,7 +1,36 @@
 nav {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed !important; }
   nav * {
     color: white; }
+
+#riva {
+  background-image: url(/img/riva1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: content-box; }
+  #riva * {
+    color: white; }
+  #riva .row .title {
+    text-transform: uppercase;
+    font-family: "mrs-eaves", serif;
+    font-size: 10em; }
+
+#follow_riva {
+  background-image: url(/img/riva2.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-attachment: local;
+  background-origin: content-box; }
+  #follow_riva * {
+    color: white; }
+
+#hello {
+  background-color: #E5E3E5; }
+
+#contact {
+  background-color: #7F7C7F;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
