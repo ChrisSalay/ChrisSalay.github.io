@@ -3,6 +3,13 @@ nav {
   position: fixed !important; }
   nav * {
     color: white; }
+  nav h1 {
+    font-family: "balboa-plus-inline", sans-serif; }
+  nav i.fa {
+    float: right;
+    margin-right: 0.5em; }
+  nav #menu_label {
+    float: right; }
 
 #riva {
   background-image: url(/img/riva1.jpg);
@@ -32,11 +39,13 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-family: "balboa-plus-fill", sans-serif;
-    font-size: 10em; }
+    font-size: 10em;
+    color: black; }
   #hello h2 {
     font-family: "balboa-plus-inline", sans-serif;
     font-size: 5em;
-    text-align: center; }
+    text-align: center;
+    color: black; }
 
 #contact {
   background-color: #7F7C7F;
