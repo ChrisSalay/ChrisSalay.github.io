@@ -28,7 +28,20 @@
                 </div>
             </div>
             <div class="section" id="follow_riva">
-                <h1>section 3</h1>
+                <div class="row">
+                    <h1>Follow me on:</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
             <div class="section" id="contact">
                 <div class="row">

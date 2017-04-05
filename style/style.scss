@@ -1,113 +1,129 @@
 @import 'mixins';
 @import 'variables';
-
-nav {
-    background-color: $trans_black;
-    position: fixed !important;
-    *{
-        color: white;
-    }
-    
-    h1{
-        font-family:$heading2;
-    }
-    
-i.fa {
-        float: right;
-        margin-right: 0.5em;
-    }
-    
-    #menu_label {
-        float: right;
-    }
-}
-#menu {
-    background-color: $trans_blanc_fonce;
-    position: fixed;
-    z-index: 99;
-    @include strict_height(100%);
-    @include strict_width(100%);
-    text-align: center;
-    display: none;
-    
-    ul {
-        list-style: none;
-        margin-top: 10em;
+@media (min-width: 0px) and (max-width: 787px){@import 'x_small';}
+@media (min-width: 768px) and (max-width: 991px){@import 'small';}
+@media (min-width: 992px) and (max-width: 1199px){@import 'medium';}
+@media screen and (min-width: 1200px){
+    nav {
+        background-color: $trans_black;
+        position: fixed !important;
+        *{
+            color: white;
+        }
         
-        li {
-            a {
-                text-decoration: none;
-                font-family:$heading2;
-                font-size: 5em;
-                color: black;
+        h1{
+            font-family:$heading2;
+        }
+        
+    i.fa {
+            float: right;
+            margin-right: 0.5em;
+        }
+        
+        #menu_label {
+            float: right;
+        }
+    }
+    #menu {
+        background-color: $trans_blanc_fonce;
+        position: fixed;
+        z-index: 99;
+        @include strict_height(100%);
+        @include strict_width(100%);
+        text-align: center;
+        display: none;
+        
+        ul {
+            list-style: none;
+            margin-top: 10em;
+            
+            li {
+                a {
+                    text-decoration: none;
+                    font-family:$heading2;
+                    font-size: 5em;
+                    color: black;
+                }
             }
         }
     }
-}
-#riva {
-    @include add_image($riva1);
-    
-    *{
-        color: white;
-    }
-    
-    .row {
-        .title {
-            text-transform: uppercase;
-            font-family: $mrs-eaves;
-            font-size: 10em;
+    #riva {
+        @include add_image($riva1);
+        
+        *{
+            color: white;
         }
-    }
-    
-}
-#follow_riva {
-    @include add_image($riva2, contain,local,repeat-x);
-    
-    *{
-        color: white;
-    }
-}
-
-#hello {
-    background-color: $light_silver;
-    
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        font-family:$heading1;
-        font-size: 10em;
-        color: black;
-    }
-    
-    h2 {
-        font-family: $heading2;
-        font-size: 5em;
-        text-align: center;
-        color: black;
+        
+        .row {
+            .title {
+                text-transform: uppercase;
+                font-family: $mrs-eaves;
+                font-size: 10em;
+            }
+        }
         
     }
-}
-#contact {
-    background-color: $gris;
-    color: white;
-    text-align: center;
-    h1 {
-        font-family: $heading2;
-        font-size: 6em;
+    #follow_riva {
+        @include add_image($riva2, contain,local,repeat-x);
+        text-align: center;
+        h1 {
+            text-align: center;
+            font-family:$heading2;
+            font-size: 6em;
+            text-shadow: 2px 2px black;
+        }
+        
+        *{
+            color: white;
+        }
+        
+        i {
+            display: inline-block;
+        }
+        
     }
     
-        input {
-            margin-bottom: 2em;
-            border-radius: 5px;
+    #hello {
+        background-color: $light_silver;
+        
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family:$heading1;
+            font-size: 10em;
             color: black;
         }
         
-        input[type = text], input[type = email] {
-            @include strict_width(35em);
+        h2 {
+            font-family: $heading2;
+            font-size: 5em;
+            text-align: center;
+            color: black;
+            
+        }
+    }
+    #contact {
+        background-color: $gris;
+        color: white;
+        text-align: center;
+        h1 {
+            font-family: $heading2;
+            font-size: 6em;
         }
         
-        input[type=textarea] {
-            @include strict_width(85em);
-            @include strict_height(10em);
+            input {
+                margin-bottom: 2em;
+                border-radius: 5px;
+                color: black;
+            }
+            
+            input[type = text], input[type = email] {
+                @include strict_width(35em);
+            }
+            
+            input[type=textarea] {
+                @include strict_width(85em);
+                @include strict_height(10em);
+            }
         }
     }
