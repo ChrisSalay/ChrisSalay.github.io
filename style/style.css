@@ -11,6 +11,25 @@ nav {
   nav #menu_label {
     float: right; }
 
+#menu {
+  background-color: rgba(229, 224, 229, 0.8);
+  position: fixed;
+  z-index: 99;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  text-align: center;
+  display: none; }
+  #menu ul {
+    list-style: none;
+    margin-top: 10em; }
+    #menu ul li a {
+      text-decoration: none;
+      font-family: "balboa-plus-inline", sans-serif;
+      font-size: 5em;
+      color: black; }
+
 #riva {
   background-image: url(/img/riva1.jpg);
   background-repeat: no-repeat;
