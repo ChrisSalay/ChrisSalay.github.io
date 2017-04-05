@@ -28,9 +28,34 @@ nav {
 
 #hello {
   background-color: #E5E3E5; }
+  #hello h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "balboa-plus-fill", sans-serif;
+    font-size: 10em; }
+  #hello h2 {
+    font-family: "balboa-plus-inline", sans-serif;
+    font-size: 5em;
+    text-align: center; }
 
 #contact {
   background-color: #7F7C7F;
-  color: white; }
+  color: white;
+  text-align: center; }
+  #contact h1 {
+    font-family: "balboa-plus-inline", sans-serif;
+    font-size: 6em; }
+  #contact input {
+    margin-bottom: 2em;
+    border-radius: 5px;
+    color: black; }
+  #contact input[type=text], #contact input[type=email] {
+    max-width: 35em;
+    min-width: 35em; }
+  #contact input[type=textarea] {
+    max-width: 85em;
+    min-width: 85em;
+    min-height: 10em;
+    max-height: 10em; }
 
 /*# sourceMappingURL=style.css.map */

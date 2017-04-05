@@ -32,8 +32,44 @@ nav {
     }
 }
 
-#hello {background-color: $light_silver;}
+#hello {
+    background-color: $light_silver;
+    
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family:$heading1;
+        font-size: 10em;
+    }
+    
+    h2 {
+        font-family: $heading2;
+        font-size: 5em;
+        text-align: center;
+        
+    }
+}
 #contact {
     background-color: $gris;
     color: white;
-}
+    text-align: center;
+    h1 {
+        font-family: $heading2;
+        font-size: 6em;
+    }
+    
+        input {
+            margin-bottom: 2em;
+            border-radius: 5px;
+            color: black;
+        }
+        
+        input[type = text], input[type = email] {
+            @include strict_width(35em);
+        }
+        
+        input[type=textarea] {
+            @include strict_width(85em);
+            @include strict_height(10em);
+        }
+    }
