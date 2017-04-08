@@ -1,11 +1,52 @@
-
-var maxWidth = $(window).width();
-var maxHeight = $(window).height();
-
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 	    navigation: true,
-	    navigationTooltips:['Introduction','Hi I am Riva','Contact me','Follow me']
+	    navigationTooltips:['Introduction','Hi I am Riva','Follow me','Contact me'],
+	    showActiveTooltip: true,
+	    afterLoad: function(anchorLink, index){
+	    	var loadedSection = $(this);
+	    	
+	    		/*if(index == 1){
+		    		$("#fp-nav ul li a span, .fp-slidesNav ul li a span").animate({
+	    				backgroundColor : 'white'
+	    			}); */
+	    			
+	    			switch(index){
+	    				
+	    				case 1:
+	    				$("#fp-nav ul li a span, .fp-slidesNav ul li a span").animate({
+	    					backgroundColor : 'white'
+	    				});
+	    				$("nav").animate({backgroundColor: 'black'});
+	    				$("#fp-nav ul li .fp-tooltip").animate({color:'#fff'});
+	    				break;
+	    				
+	    				case 2:
+	    					$("nav").animate({backgroundColor: 'rgba(191,186,191,0.7)'});
+	    					$("#hello h1").slideDown();
+	    					$("#hello h2").fadeIn();
+	    					$("#fp-nav ul li .fp-tooltip").animate({color:'#fff'});
+	    				break;
+	    				
+	    				case 3:
+	    					$("#follow_riva i.fa.fa-twitter-square.fa-5x").fadeIn("slow",function(){
+	    						$("#follow_riva i.fa.fa-facebook-square.fa-5x").fadeIn("slow", function(){
+	    							$("#follow_riva i.fa.fa-instagram.fa-5x").fadeIn("slow");
+	    						});
+	    					});
+	    					$("#fp-nav ul li .fp-tooltip").animate({color:'#fff'});
+    					break;
+    					
+    					case 4:
+    						$("nav").animate({backgroundColor: 'black'});
+    						$("#fp-nav ul li .fp-tooltip").animate({color:'black'});
+    					break;
+	    				
+	    			}
+	    			
+	    			
+
+	    	} // end of after load
 	});
 	
 	try{
