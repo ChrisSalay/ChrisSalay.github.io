@@ -59,21 +59,23 @@
     #follow_riva * {
       color: white; }
     #follow_riva i {
-      display: inline-block; }
+      display: none; }
 
   #hello {
-    background-color: #E5E3E5; }
+    background-color: black; }
     #hello h1 {
       text-align: center;
       text-transform: uppercase;
       font-family: "balboa-plus-fill", sans-serif;
       font-size: 10em;
-      color: black; }
+      color: white;
+      display: none; }
     #hello h2 {
       font-family: "balboa-plus-inline", sans-serif;
       font-size: 5em;
       text-align: center;
-      color: black; }
+      color: white;
+      display: none; }
 
   #contact {
     background-color: #7F7C7F;
