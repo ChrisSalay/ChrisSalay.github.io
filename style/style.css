@@ -1,1 +1,169 @@
-@media screen and (min-width:1200px){nav #menu_label,nav i.fa{float:right}#menu ul li a,nav h1{font-family:balboa-plus-inline,sans-serif}#follow_riva,#riva{background-origin:content-box}#follow_riva i,#hello h1,#hello h2,#menu{display:none}#contact,#follow_riva *,#hello h1,#hello h2,#riva *,nav *{color:#fff}#contact,#follow_riva,#follow_riva h1,#hello h1,#hello h2,#menu{text-align:center}nav{background-color:rgba(0,0,0,.7);position:fixed!important}nav i.fa{margin-right:.5em}#menu{background-color:rgba(229,224,229,.8);position:fixed;z-index:99;min-height:100%;max-height:100%;max-width:100%;min-width:100%}#menu ul{list-style:none;margin-top:10em}#menu ul li a{text-decoration:none;font-size:5em;color:#000}#riva{background-image:url(/img/riva1.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed}#riva .row .title{text-transform:uppercase;font-family:mrs-eaves,serif;font-size:10em}#follow_riva{background-image:url(/img/riva2.jpg);background-repeat:repeat-x;background-size:contain;background-attachment:local}#follow_riva h1{font-family:balboa-plus-inline,sans-serif;font-size:6em;text-shadow:2px 2px #000}#hello{background-color:#000}#hello h1{text-transform:uppercase;font-family:balboa-plus-fill,sans-serif;font-size:10em}#contact h1,#hello h2{font-family:balboa-plus-inline,sans-serif}#hello h2{font-size:5em}#contact{background-color:#7F7C7F}#contact h1{font-size:6em}#contact input{margin-bottom:2em;border-radius:5px;color:#000}#contact input[type=email],#contact input[type=text]{max-width:35em;min-width:35em}#contact input[type=textarea]{max-width:85em;min-width:85em;min-height:10em;max-height:10em}}
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed !important; }
+  nav * {
+    color: white; }
+  nav h1 {
+    font-family: "balboa-plus-inline", sans-serif; }
+  nav i.fa {
+    float: right;
+    margin-right: 0.5em; }
+  nav #menu_label {
+    float: right; }
+
+#menu {
+  background-color: rgba(229, 224, 229, 0.8);
+  position: fixed;
+  z-index: 99;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  text-align: center;
+  display: none; }
+  #menu ul {
+    list-style: none;
+    margin-top: 10em; }
+    #menu ul li a {
+      text-decoration: none;
+      font-family: "balboa-plus-inline", sans-serif;
+      font-size: 5em;
+      color: black; }
+
+#riva {
+  background-image: url(/img/riva1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: content-box; }
+  #riva * {
+    color: white; }
+  #riva .row .title {
+    text-transform: uppercase;
+    font-family: "mrs-eaves", serif; }
+
+#follow_riva {
+  background-image: url(/img/riva2.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-attachment: local;
+  background-origin: content-box;
+  text-align: center; }
+  #follow_riva h1 {
+    text-align: center;
+    font-family: "balboa-plus-inline", sans-serif;
+    font-size: 6em;
+    text-shadow: 2px 2px black; }
+  #follow_riva * {
+    color: white; }
+  #follow_riva i {
+    display: none; }
+
+#hello {
+  background-color: black; }
+  #hello h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "balboa-plus-fill", sans-serif;
+    font-size: 10em;
+    color: white;
+    display: none; }
+  #hello h2 {
+    font-family: "balboa-plus-inline", sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    display: none; }
+
+#contact {
+  background-color: #7F7C7F;
+  color: white;
+  text-align: center; }
+  #contact h1 {
+    font-family: "balboa-plus-inline", sans-serif;
+    font-size: 6em; }
+  #contact input {
+    margin-bottom: 2em;
+    border-radius: 5px;
+    color: black; }
+  #contact input[type=text], #contact input[type=email] {
+    max-width: 35em;
+    min-width: 35em; }
+  #contact input[type=textarea] {
+    max-width: 85em;
+    min-width: 85em;
+    min-height: 10em;
+    max-height: 10em; }
+
+@media (min-width: 0px) and (max-width: 468px) {
+  #riva .row .title {
+    font-size: 2.8em;
+    margin-top: 2.5em; }
+
+  nav h1 {
+    font-size: 2em; }
+
+  nav i.fa {
+    margin-right: 0.2px; }
+
+  nav #menu_label {
+    float: left;
+    margin-left: 1em; }
+
+  #hello h1 {
+    font-size: 5em; }
+
+  #hello h2 {
+    font-size: 2.5em; }
+
+  #contact input[type=text], #contact input[type=email], #contact input[type=textarea] {
+    max-width: 20em;
+    min-width: 20em; }
+
+  #contact h1, #follow_riva h1 {
+    font-size: 5em; }
+
+  #follow_riva {
+    background-repeat: repeat-y; }
+
+  #menu ul li a {
+    font-size: 4.5em; }
+
+  #riva {
+    background-position: center; } }
+@media (min-width: 469px) and (max-width: 540px) {
+  #riva .row .title {
+    font-size: 3.5em;
+    margin-bottom: 2.5em; }
+
+  #contact input[type=text], #contact input[type=email],
+  #contact input[type=textarea] {
+    max-width: 30em;
+    min-width: 30em; } }
+@media (min-width: 541px) and (max-width: 787px) {
+  #riva .row .title {
+    font-size: 4em;
+    margin-bottom: 2.5em; }
+
+  #contact input[type=textarea] {
+    max-width: 35em;
+    min-width: 35em; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  #riva .row .title {
+    font-size: 6em; }
+
+  #contact input[type=text], #contact input[type=email],
+  #contact input[type=textarea] {
+    max-width: 45em;
+    min-width: 45em; }
+
+  #follow_riva {
+    background-repeat: repeat; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #riva .row .title {
+    font-size: 8em; } }
+@media (min-width: 1200px) {
+  .title {
+    font-size: 10em; } }
+
+/*# sourceMappingURL=style.css.map */

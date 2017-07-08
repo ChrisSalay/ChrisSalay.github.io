@@ -1,0 +1,48 @@
+@import 'mixins';
+@import 'variables';
+
+#riva .row .title{
+    font-size: 2.8em;
+    margin-top: 2.5em;
+}
+
+nav h1 {
+    font-size: 2em;
+}
+
+nav i.fa {
+    margin-right: 0.2px;
+}
+
+nav #menu_label {
+    float: left;
+    margin-left: 1em;
+}
+
+#hello h1 {
+    font-size: 5em;
+}
+
+#hello h2 {
+    font-size: 2.5em;
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=textarea]{
+    @include strict_width(20em);
+}
+
+#contact h1, #follow_riva h1 {
+    font-size: 5em;
+}
+
+#follow_riva {
+    background-repeat: repeat-y;
+}
+
+#menu ul li a {
+    font-size: 4.5em;
+}
+
+#riva {
+    background-position: center;
+}

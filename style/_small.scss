@@ -1,0 +1,13 @@
+#riva .row .title{
+    font-size: 6em;
+}
+
+#contact input[type=text], #contact input[type=email],
+#contact input[type=textarea] {
+    max-width: 45em;
+    min-width: 45em;
+}
+
+#follow_riva {
+    background-repeat: repeat;
+}

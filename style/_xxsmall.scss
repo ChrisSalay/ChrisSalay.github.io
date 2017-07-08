@@ -1,0 +1,10 @@
+#riva .row .title{
+    font-size: 3.5em;
+     margin-bottom: 2.5em;
+}
+
+#contact input[type=text], #contact input[type=email],
+#contact input[type=textarea] {
+    max-width: 30em;
+    min-width: 30em;
+}

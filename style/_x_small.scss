@@ -1,0 +1,11 @@
+@import 'mixins';
+@import 'variables';
+
+#riva .row .title{
+    font-size: 4em;
+    margin-bottom: 2.5em;
+}
+
+#contact input[type=textarea] {
+    @include strict_width(35em);
+}
